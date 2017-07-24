@@ -4,17 +4,17 @@
 import numpy as np
 #一维数组
 a=np.array([1,2,3,4,5,6])
-print a
+print (a)
 #二位数组
 b=np.array([[1,2,3],[2,3,4]])
-print b
+print (b)
 #查看数组大小
 a.shape
 b.shape
 #arange函数  指定开始值、终值和步长来创建一维数组(不包括终值)
 np.arange(0,1,0.2)
 #linspace函数通过指定开始值、终值和元素个数来创建一维数组
-np.linspace(0,a 1, 9)
+np.linspace(0,a, 1, 9)
 #logspace函数创建等比例数组
 np.logspace(0, 2, 20)
 

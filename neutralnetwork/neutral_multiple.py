@@ -6,7 +6,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn.metrics import roc_auc_score
+# from sklearn.metrics import roc_auc_score
 iris=pd.read_csv("iris.csv")
 shuffle_index=np.random.permutation(iris.index)
 iris=iris.reindex(shuffle_index)
@@ -144,4 +144,4 @@ model.learn(X_train, y_train)
 yhat = model.predict(X_test)[0]
 
 auc = roc_auc_score(y_test, yhat)
-print auc
+print (auc)
